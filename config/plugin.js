@@ -2,8 +2,14 @@
 
 /** @type Egg.EggPlugin */
 module.exports = {
+  // 配置跨域
+  /* cors: {
+    enable: true,
+    package: 'egg-cors',
+  }, */
   // had enabled by egg
-  // static: {
-  //   enable: true,
-  // }
+  sequelize: {
+    enable: true,
+    package: 'egg-sequelize',
+  },
 };

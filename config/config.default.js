@@ -12,6 +12,13 @@ module.exports = appInfo => {
    **/
   const config = exports = {};
 
+  config.sequelize = {
+    dialect: 'mysql',
+    host: '127.0.0.1',
+    port: 3306,
+    database: 'attendance',
+  };
+
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1615531926712_5939';
 
